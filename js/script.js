@@ -4,6 +4,8 @@ $(function() {
 
     $("#search").click(function() {
         let pokemonNameOrID = $("#pokemonInput").val().toLowerCase();
+
+        $("#pokemonInput").val("");
         $("pokemonInformationList").html("");
         getPokemonInfo(pokemonNameOrID);
     });
